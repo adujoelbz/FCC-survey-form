@@ -1,0 +1,116 @@
+/*|| RESET*/
+*,
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* || COLORS */
+    --BGCOLOR: linear-gradient(#3cbedf,#51783b);
+    --FORM-BG-COLOR: hsla(0, 0%, 0%, 0.7);
+    --TEXT-COLOR: aliceblue;
+    --TEXT-SHADOW: 2px 5px 5px rgb(97, 109, 120);;
+    --BOX-SHADOW: 0 0 2px 0 whitesmoke;
+    --BUTTON-BG: rgb(29, 237, 29);
+    /*|| FONT*/
+    --HEADER-FS: 2.5rem;
+    --FF: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --FS: 1.5rem;
+    /* ||STANDARD SIZES*/
+    --PADDING: 1rem;
+    --MARGIN: 0.5rem;
+    --HEARDER-MARGIN: 0.5rem;
+    --BORDER-RADIUS: 15px;
+    --HEIGHT: 2rem;
+}
+
+/*|| UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.offscreen {
+    position: absolute;
+    left: -1000px;
+}
+
+/* || GENERAL STYLES*/
+html {
+    background-image: var(--BGCOLOR);
+    font-family: var(--FF);
+}
+
+.form {
+    max-width: 600px;
+    margin-inline: auto;
+    background-color: var(--FORM-BG-COLOR);
+    color: var(--TEXT-COLOR);
+    font-size: var(--FS);
+    padding: var(--PADDING);
+    border-radius: var(--BORDER-RADIUS);
+    box-shadow: var(--BOX-SHADOW);
+}
+
+.header__h1 {
+    font-size: var(--HEADER-FS);
+    margin: var(--HEADER-MARGIN);
+    text-shadow: var(--TEXT-SHADOW);
+}
+
+.header__p {
+    margin: var(--MARGIN);
+    font-size: 1.2rem;
+    padding-bottom: var(--PADDING);
+    text-shadow: var(--TEXT-SHADOW);
+}
+
+.form__fieldset {
+    border-top: none;
+    border-inline: none;
+    padding: var(--PADDING);
+    margin-bottom: var(--MARGIN);
+}
+
+.form__input {
+    width: 100%;
+    height: var(--HEIGHT);
+}
+
+.form__select {
+    width: 100%;
+    height: var(--HEIGHT);
+}
+
+.form__textarea {
+    width: 100%;
+    font-family: inherit;
+}
+
+.form__p {
+    padding-block: 0.5rem;
+}
+
+.form__button {
+    width: 100%;
+    height: var(--HEIGHT);
+    background-color: var(--BUTTON-BG);
+    color: var(--TEXT-COLOR);
+    font-size: 1.2rem;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+.footer {
+    padding: var(--PADDING);
+}
+
+.footer__p:nth-child(2) {
+    padding-top: 2rem;
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adu Anokye Joel">
+    <meta name="description" content="Website for AJA TECH survey Form">
+    <link rel="icon" href="img/menu (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>AJA TECH Survey Form</title>
+</head>
+<body>
+    <header class="header center">
+        <h1 id="title" class="header__h1">AJA TECHNOLOGIES</h1>
+        <p id="description" class="header__p"><q>Welcome to the world of innovation.</q></p>
+    </header>
+    <main class="main">
+        <form action="https://httpbin.org/post" method="post" id="survey-form" class="form">
+            <fieldset class="form__fieldset">
+                <legend class="offscreen">Personal <abbr title="Information">Info</abbr></legend>
+                <p class="form__p">
+                    <label for="name" id="name-label">Enter Your First Name <input class="form__input" type="text" id="name" name="name" required placeholder="Joel" autofocus></label>
+                </p>
+                <p class="form__p">
+                    <label for="name" id="name-label">Enter Your last Name <input class="form__input" type="text" id="name" name="name" placeholder="Adu"></label>
+                </p>
+                <p class="form__p">
+                    <label for="number" id="number-label">Age(Optional) <input class="form__input" type="number" id="number" max="45" name="number"min="18" placeholder="Your Age"></label>
+                </p>
+                <p class="form__p">
+                    <label for="email" id="email-label">Email<input class="form__input" type="email" name="email" id="email" required placeholder="qysbxh@gmail.com"></label>
+                </p>
+                <p class="form__p">
+                    <label for="tel" id="tel-label">Phone<input class="form__input" type="tel" id="tel" name="tel" required placeholder="+233 578 875 875" maxlength="13"></label>
+                </p>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend>Gender</legend>
+                <p class="form__p">
+                    <label for="gender"><input  type="radio" name="gender" id="gender" required checked value="Male"> Male</label>
+                    <label for="gender"><input  type="radio" id="gender" name="gender" required value="Female"> Female</label>
+                </p>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <p class="form__p">
+                    <label for="dropdown">What Programming language are you an expert of ?</label>
+                </p>
+                <select name="Prog-lang" id="dropdown" class="form__select">
+                    <option value="Python" selected>Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Django">Django</option>
+                    <option value="C++">C++</option>
+                    <option value="Typescript">Typescript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="Swift">Swift</option>
+                    <option value="Kotlin">Kotlin</option>
+                    <option value="Objective-C">Objective-c</option>
+                    <option value="React Native">React Native</option>
+                    <option value="C">C</option>
+                    <option value="Bash">Bash</option>
+                    <option value="Julia">Julia</option>
+                </select>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <p class="form__p">What type of developer are you?</p>
+                <p class="form__p">
+                    <label for="Dev"><input type="checkbox" id="Dev" value="Front-end developer"> Front-end developer</label>
+                </p>
+                <p class="form__p">
+                    <label for="Dev"><input type="checkbox" id="Dev" value="Back-end developer"> Back-end developer</label>
+                </p>
+                <p class="form__p">
+                    <label for="Dev"><input type="checkbox" id="Dev" value="Fullstack developer"> Fullstack developer</label>
+                </p>
+                <p class="form__p">
+                    <label for="Dev"><input type="checkbox" id="Dev" value="UX developer"> UX developer</label>
+                </p>
+                <p class="form__p">
+                    <label for="Dev"><input type="checkbox" id="Dev" value="DevOps developer"> DevOps developer</label>
+                </p>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <p class="form__p">
+                    <label for="comments">
+                        Enter Your Comments Here
+                    </label>
+                </p>
+                <p class="form__p">
+                    <textarea name="comments" id="comments" class="form__textarea" cols="30" rows="10" placeholder="Write your comments"></textarea>
+                </p>
+            </fieldset>
+            <p class="form__p">
+                <button class="form__button center" name="submit" type="submit" id="submit">Submit</button>
+            </p>
+        </form>
+    </main>
+    <footer class="footer center">
+        <p class="footer__p">
+            <label for="agree" ><input type="checkbox" value="I have agreed to terms and conditions" id="agree" required>I have agreed to <a href="">terms and conditions</a></label>
+        </p>
+        <p class="footer__p">&copy; AJA TECH</p>
+    </footer>
+</body>
+</html>
